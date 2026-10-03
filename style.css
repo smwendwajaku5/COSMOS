@@ -5,7 +5,7 @@
 	--muted: #606d7e;
 	--blue: #d7e7fb;
 	--blue-deep: #365e91;
-	--line: rgba(20, 25, 20, 0.14);
+	--line: rgba(3, 99, 3, 0.14);
 	font-family: "DM Sans", sans-serif;
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
@@ -79,7 +79,7 @@ a { color: inherit; text-decoration: none; }
 	font-weight: 600;
 }
 
-.hero {
+.cultivator {
 	position: relative;
 	display: grid;
 	grid-template-columns: minmax(0, 1fr) minmax(0, 0.92fr);
@@ -92,7 +92,7 @@ a { color: inherit; text-decoration: none; }
 		linear-gradient(115deg, #edf2f8 0%, #f8f9fb 50%, #f1f5fb 100%);
 }
 
-.hero::before {
+.cultivator::before {
 	position: absolute;
 	inset: 0;
 	background-image: linear-gradient(rgba(31, 50, 77, 0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(31, 50, 77, 0.025) 1px, transparent 1px);
@@ -102,9 +102,9 @@ a { color: inherit; text-decoration: none; }
 	pointer-events: none;
 }
 
-.hero-visual, .hero-copy { position: relative; z-index: 1; }
+.cultivator-visual, .cultivator-copy { position: relative; z-index: 1; }
 
-.hero-visual {
+.cultivator-visual {
 	display: grid;
 	place-items: center;
 	min-width: 0;
@@ -112,7 +112,7 @@ a { color: inherit; text-decoration: none; }
 	animation: rise-in 850ms 100ms both cubic-bezier(.2, .7, .25, 1);
 }
 
-.hero-image {
+.cultivator-image {
 	position: relative;
 	z-index: 1;
 	display: block;
@@ -165,7 +165,7 @@ a { color: inherit; text-decoration: none; }
 	font: 500 12px "Space Grotesk", sans-serif;
 }
 
-.hero-copy {
+.cultivator-copy {
 	max-width: 590px;
 	justify-self: end;
 	padding-left: clamp(20px, 4vw, 64px);
@@ -218,7 +218,7 @@ h1 span::after {
 	line-height: 1.8;
 }
 
-.hero-actions { display: flex; align-items: center; gap: 30px; margin-top: 34px; }
+.cultivator-actions { display: flex; align-items: center; gap: 30px; margin-top: 34px; }
 
 .button {
 	display: inline-flex;
@@ -239,7 +239,7 @@ h1 span::after {
 .text-link { font-size: 13px; text-decoration: underline; text-underline-offset: 4px; }
 .text-link span { margin-left: 6px; text-decoration: none; }
 
-.hero-meta {
+.cultivator-meta {
 	display: flex;
 	align-items: center;
 	gap: 13px;
@@ -359,9 +359,9 @@ h1 span::after {
 
 @media (max-width: 900px) {
 	.main-nav { gap: 20px; margin-left: 0; font-size: 12px; }
-	.hero { grid-template-columns: minmax(0, 0.88fr) minmax(0, 1fr); padding-right: 6vw; padding-left: 6vw; }
-	.hero-visual { min-height: 430px; }
-	.hero-copy { padding-left: 26px; }
+	.cultivator { grid-template-columns: minmax(0, 0.88fr) minmax(0, 1fr); padding-right: 6vw; padding-left: 6vw; }
+	.cultivator-visual { min-height: 430px; }
+	.cultivator-copy { padding-left: 26px; }
 	h1 { font-size: clamp(46px, 7vw, 66px); }
 	.signal-band { padding-right: 6vw; padding-left: 6vw; }
 	.approach-section { padding-right: 6vw; padding-left: 6vw; }
@@ -373,19 +373,19 @@ h1 span::after {
 	.main-nav { gap: 15px; font-size: 11px; }
 	.main-nav a:nth-child(3) { display: none; }
 	.header-cta { min-height: 38px; gap: 10px; padding: 0 12px; font-size: 11px; }
-	.hero { grid-template-columns: 1fr; gap: 22px; min-height: auto; padding: 20px 24px 66px; }
-	.hero-visual { min-height: 0; height: min(94vw, 430px); }
-	.hero-image { width: min(76%, 320px); height: 100%; aspect-ratio: auto; }
+	.cultivator { grid-template-columns: 1fr; gap: 22px; min-height: auto; padding: 20px 24px 66px; }
+	.cultivator-visual { min-height: 0; height: min(94vw, 430px); }
+	.cultivator-image { width: min(76%, 320px); height: 100%; aspect-ratio: auto; }
 	.orbit { width: 83%; }
 	.orbit-two { width: 94%; }
 	.image-index { top: 7%; left: 0; font-size: 9px; }
 	.image-caption { right: 0; bottom: 6%; font-size: 11px; }
-	.hero-copy { max-width: 520px; justify-self: start; padding: 0; }
+	.cultivator-copy { max-width: 520px; justify-self: start; padding: 0; }
 	.eyebrow { margin-bottom: 18px; }
 	h1 { font-size: clamp(48px, 12vw, 66px); }
 	.intro { margin-top: 20px; font-size: 14px; }
-	.hero-actions { flex-wrap: wrap; gap: 19px; margin-top: 25px; }
-	.hero-meta { margin-top: 28px; font-size: 10px; }
+	.cultivator-actions { flex-wrap: wrap; gap: 19px; margin-top: 25px; }
+	.cultivator-meta { margin-top: 28px; font-size: 10px; }
 	.scroll-cue { display: none; }
 	.signal-band { flex-wrap: wrap; min-height: 0; padding: 32px 24px; }
 	.platform-visual { flex-basis: 120px; width: 120px; height: 120px; }
@@ -399,8 +399,8 @@ h1 span::after {
 @media (max-width: 390px) {
 	.main-nav { gap: 11px; font-size: 10px; }
 	.header-cta { gap: 7px; padding: 0 9px; }
-	.hero { padding-right: 19px; padding-left: 19px; }
-	.hero-actions { align-items: flex-start; flex-direction: column; }
+	.cultivator { padding-right: 19px; padding-left: 19px; }
+	.cultivator-actions { align-items: flex-start; flex-direction: column; }
 }
 
 @media (prefers-reduced-motion: reduce) {
