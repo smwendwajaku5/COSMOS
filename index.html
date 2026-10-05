@@ -4,8 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#f4f7fb">
-	<meta name="description" content="COSMOS brings human insight into the next generation of artificial intelligence.">
-	<title>COSMOS — Human intelligence, built in</title>
+	<meta name="description" content="COSMOS brings human expertise and real-world context into AI development to help teams build more useful systems.">
+	<meta property="og:title" content="COSMOS — Human insight for what's next">
+	<meta property="og:description" content="Bring human expertise into AI development. Ground decisions in context, evaluate what matters, and build more useful systems.">
+	<meta property="og:type" content="website">
+	<title>COSMOS — Human insight for what's next</title>
 	<link rel="icon" type="image/png" href="cosmos.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,73 +21,110 @@
 	<header class="site-header">
 		<a class="wordmark" href="#home" aria-label="COSMOS home">COSMOS<span class="wordmark-dot">.</span></a>
 		<nav class="main-nav" aria-label="Main navigation">
-			<a href="#platform">Platform <span aria-hidden="true">↗</span></a>
+			<a href="#platform">What we do</a>
 			<a href="#approach">Our approach</a>
-			<a href="#signals">Signals</a>
+			<a href="#signals">Why COSMOS</a>
 		</nav>
-		<a class="header-cta" href="mailto:hello@cosmos.example">Let's talk <span aria-hidden="true">↗</span></a>
-	</header>gg
+		<a class="header-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+	</header>
+
+	<button class="settings-trigger" type="button" aria-label="Open settings" aria-expanded="false" aria-controls="site-settings">
+		<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+			<path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z"></path>
+			<path d="m19.4 15 .1.1a1.8 1.8 0 0 1-2.5 2.5l-.1-.1a1.8 1.8 0 0 0-3 .9v.2a1.8 1.8 0 0 1-3.6 0v-.2a1.8 1.8 0 0 0-3-.9l-.1.1a1.8 1.8 0 0 1-2.5-2.5l.1-.1a1.8 1.8 0 0 0-.9-3h-.2a1.8 1.8 0 0 1 0-3.6h.2a1.8 1.8 0 0 0 .9-3l-.1-.1a1.8 1.8 0 0 1 2.5-2.5l.1.1a1.8 1.8 0 0 0 3-.9v-.2a1.8 1.8 0 0 1 3.6 0v.2a1.8 1.8 0 0 0 3 .9l.1-.1a1.8 1.8 0 0 1 2.5 2.5l-.1.1a1.8 1.8 0 0 0 .9 3h.2a1.8 1.8 0 0 1 0 3.6h-.2a1.8 1.8 0 0 0-.9 3Z"></path>
+		</svg>
+		<span>Settings</span>
+	</button>
+	<div class="settings-panel" id="site-settings" role="dialog" aria-labelledby="settings-title" hidden>
+		<div class="settings-heading">
+			<h2 id="settings-title">Settings</h2>
+			<button class="settings-close" type="button" aria-label="Close settings">*</button>
+		</div>
+		<label class="setting-row" for="theme-setting">
+			<span><strong>Theme</strong><small>Choose how COSMOS looks</small></span>
+			<select id="theme-setting" name="theme">
+				<option value="system">System</option>
+				<option value="light">Light</option>
+				<option value="dark">Dark</option>
+			</select>
+		</label>
+		<label class="setting-row" for="motion-setting">
+			<span><strong>Reduce motion</strong><small>Limit animations and movement</small></span>
+			<input id="motion-setting" name="reduceMotion" type="checkbox">
+		</label>
+		<label class="setting-row" for="contrast-setting">
+			<span><strong>High contrast</strong><small>Make text and dividers clearer</small></span>
+			<input id="contrast-setting" name="highContrast" type="checkbox">
+		</label>
+		<p class="settings-status" role="status" aria-live="polite"></p>
+	</div>
 
 	<main>
 		<section class="cultivator" id="home" aria-labelledby="cultivator-title">
 			<div class="cultivator-visual">
 				<div class="orbit orbit-one" aria-hidden="true"></div>
 				<div class="orbit orbit-two" aria-hidden="true"></div>
-				<img class="cultivator-image" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="A humanoid robot representing the human perspective behind AI" fetchpriority="high">
+				<img class="cultivator-image" src="hero-prism-core.jpg" alt="A glowing mechanical core enclosed in a glass prism, representing AI shaped by human insight" fetchpriority="high">
 				<div class="image-index"><span class="live-dot"></span> HUMAN * MACHINE <span>001—026</span></div>
 				<div class="image-caption">The future is a conversation.</div>
 			</div>
 
 			<div class="cultivator-copy">
-				<p class="eyebrow"><span class="eyebrow-line"></span> INTELLIGENCE, IN CONTEXT</p>
-				<h1 id="cultivator-title">The human<br>signal <span>changes</span><br>everything.</h1>
-				<p class="intro">AI can move at the speed of light. Understanding still takes people. We bring human expertise into the loop, so intelligent systems can meet the world as it really is.</p>
+				<p class="eyebrow"><span class="eyebrow-line"></span> HUMAN INSIGHT FOR WHAT'S NEXT</p>
+				<h1 id="cultivator-title">AI needs more than data. It needs <span>people.</span></h1>
+				<p class="intro">COSMOS brings human expertise and real-world context into AI development—helping teams ask better questions, evaluate what matters, and build more useful systems.</p>
 				<div class="cultivator-actions">
-					<a class="button button-primary" href="#platform">Explore the platform <span aria-hidden="true">↗</span></a>
-					<a class="text-link" href="#approach">See how it works <span aria-hidden="true">↓</span></a>
+					<a class="button button-primary" href="#approach">Explore our approach <span aria-hidden="true">↓</span></a>
+					<a class="text-link" href="#contact">Build with COSMOS <span aria-hidden="true">↗</span></a>
 				</div>
-				<div class="cultivator-meta"><span>Built with people</span><span class="meta-divider"></span><span>Designed for what’s next</span></div>
+				<div class="cultivator-meta"><span>Human expertise</span><span class="meta-divider"></span><span>Real-world context</span></div>
 			</div>
 			<a class="scroll-cue" href="#platform" aria-label="Scroll to discover more"><span>SCROLL TO DISCOVER</span><span class="scroll-line"></span></a>
 		</section>
 
 		<section class="signal-band" id="platform" aria-label="COSMOS platform">
-			<div class="platform-visual">
-				<div class="orbit orbit-one" aria-hidden="true"></div>
-				<div class="orbit orbit-two" aria-hidden="true"></div>
-				<img class="platform-image" src="cultivator-prism-core.jpg" alt="A glowing mechanical core enclosed in a clear glass prism" loading="lazy">
-				<div class="platform-image-index"><span class="live-dot"></span> SIGNAL <span>002</span></div>
-				<div class="platform-image-caption">CORE / 02</div>
-			</div>
 			<div class="platform-copy">
-				<p class="eyebrow">BETTER INPUT. BRIGHTER OUTPUT.</p>
-				<h2>Make your AI <span>more human.</span></h2>
+				<p class="eyebrow">THE COSMOS APPROACH</p>
+				<h2>Human judgment. Better signals. <span>More useful AI.</span></h2>
+				<p>We help connect the people who understand the world to the teams shaping intelligent technology.</p>
 			</div>
-			<a class="band-link" href="mailto:hello@cosmos.example">Meet COSMOS <span aria-hidden="true">↗</span></a>
+			<a class="band-link" href="#approach">See how it works <span aria-hidden="true">↓</span></a>
 		</section>
 		<section class="approach-section" id="approach" aria-labelledby="approach-title">
 			<div class="approach-heading">
-				<p class="eyebrow"><span class="eyebrow-line"></span> A MORE HUMAN FEEDBACK LOOP</p>
-				<h2 id="approach-title">Intelligence grows<br>when we <span>listen.</span></h2>
+				<p class="eyebrow"><span class="eyebrow-line"></span> A PRACTICAL FEEDBACK LOOP</p>
+				<h2 id="approach-title">Put human insight to <span>work.</span></h2>
+				<p class="section-intro">From a better-framed problem to a more thoughtful product, human context can make every step count.</p>
 			</div>
 			<div class="approach-steps" id="signals">
 				<article class="approach-step">
 					<span class="step-number">01</span>
-					<h3>Bring people in</h3>
-					<p>Connect real-world knowledge to the questions AI needs to answer.</p>
+					<h3>Ground the question</h3>
+					<p>Bring domain expertise and lived experience to the decisions AI needs to make.</p>
 				</article>
 				<article class="approach-step">
 					<span class="step-number">02</span>
-					<h3>Make meaning</h3>
-					<p>Turn context, nuance, and lived experience into a stronger signal.</p>
+					<h3>Evaluate in context</h3>
+					<p>Look beyond a right answer to nuance, safety, and usefulness in real situations.</p>
 				</article>
 				<article class="approach-step">
 					<span class="step-number">03</span>
-					<h3>Move forward</h3>
-					<p>Build systems that respond with greater clarity in a changing world.</p>
+					<h3>Improve with feedback</h3>
+					<p>Turn human feedback into clear signals teams can use to refine AI products and experiences.</p>
 				</article>
 			</div>
 		</section>
+		<section class="contact-section" id="contact" aria-labelledby="contact-title">
+			<p class="eyebrow">FOR BUILDERS, PARTNERS &amp; INVESTORS</p>
+			<h2 id="contact-title">The future of AI should include <span>all of us.</span></h2>
+			<p>We're shaping a more human approach to AI. If you're building, researching, or investing in that future, let's start a conversation.</p>
+			<a class="button contact-button" href="mailto:hello@cosmos.example?subject=Let%E2%80%99s%20talk%20with%20COSMOS">Start a conversation <span aria-hidden="true">↗</span></a>
+		</section>
 	</main>
+	<footer class="site-footer">
+		<a class="wordmark" href="#home" aria-label="COSMOS home">COSMOS<span class="wordmark-dot">.</span></a>
+		<p>Human insight for what's next.</p>
+		<a href="#home">Back to top ↑</a>
+	</footer>
 </body>
 </html>
